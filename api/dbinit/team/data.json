@@ -25,9 +25,99 @@
       "extra": {
         "birthday": "11-23"
       }
+    },
+    {
+      "email": "judylovenick@market.com",
+      "password": "$2b$10$S.8GNMDyvUF0xzujPtHBu.j5gtS19.OhRmYbpJBnCHg2S83WLx1T2",
+      "name": "주디 홉스",
+      "phone": "01022223333",
+      "address": "서울시 강남구 삼성동 456",
+      "type": "seller",
+      "loginType": "email",
+      "image": "uploadFiles/Judy.png",
+      "extra": {
+        "birthday": "11-23"
+      }
+    },
+    {
+      "email": "pudeullover@market.com",
+      "password": "$2b$10$S.8GNMDyvUF0xzujPtHBu.j5gtS19.OhRmYbpJBnCHg2S83WLx1T2",
+      "name": "푸들푸들",
+      "phone": "01022223333",
+      "address": "서울시 강남구 삼성동 456",
+      "type": "seller",
+      "loginType": "email",
+      "image": "uploadFiles/pudeul.png",
+      "extra": {
+        "birthday": "11-23"
+      }
     }
   ],
-  "product": [],
+  "product": [
+    {
+      "seller_id": 4,
+      "price": 5000,
+      "shippingFees": 0,
+      "show": true,
+      "active": true,
+      "name": "강아지 실 장난감 판매합니다~ 터그 놀이용이고 새 상품입니다!!",
+      "quantity": 1,
+      "buyQuantity": 0,
+      "mainImages": [
+        {
+          "path": "uploadFiles/dogtoy.png",
+          "name": "sample-dog.jpg"
+        }
+      ],
+      "content": "강아지 실 장난감 판매합니다. 여러 개 사뒀는데 저희 강아진 안 가지고 노네요...ㅎㅎ 사진에 보이는 것보다 많이 있어요!",
+      "extra": {
+        "category": ["PC03", "PC0301"],
+        "sort": 5
+      }
+    },
+    {
+      "seller_id": 3,
+      "price": 3000,
+      "shippingFees": 0,
+      "show": true,
+      "active": true,
+      "name": "고양이가 좋아하는 쥐 모양 장난감 판매합니다!",
+      "quantity": 1,
+      "buyQuantity": 0,
+      "mainImages": [
+        {
+          "path": "uploadFiles/cat_toy.png",
+          "name": "sample-cat_toy.jpg"
+        }
+      ],
+      "content": "고양이들이 환장하는 쥐 모양 장난감입니다! 저희 집 고양이는 별로 안 좋아하는 것 같아서 내놓습니다. 사용감은 거의 없습니다!!",
+      "extra": {
+        "category": ["PC03", "PC0301"],
+        "sort": 5
+      }
+    },
+    {
+      "seller_id": 3,
+      "price": 7000,
+      "shippingFees": 0,
+      "show": true,
+      "active": true,
+      "name": "귀여운 생선 모양 장난감 판매합니다!",
+      "quantity": 1,
+      "buyQuantity": 0,
+      "mainImages": [
+        {
+          "path": "uploadFiles/dog_toy2.png",
+          "name": "sample-dog_toy2.jpg"
+        }
+      ],
+      "content": "강아지들이 물기 좋은 푹신한 장난감입니다. 사용감은 없습니다. 새 상품입니다!",
+      "extra": {
+        "category": ["PC03", "PC0301"],
+        "sort": 5
+      }
+    }
+  ],
   "order": [],
   "review": [],
   "cart": [],
