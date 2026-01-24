@@ -1,10 +1,26 @@
+'use client';
+
 import UnderBar from '@/components/common/Footer';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 /* ai 검색창 페이지 */
 export default function SearchPage() {
+  const goBack = useRouter();
+
   return (
     <>
+      <header>
+        <button
+          type="button"
+          onClick={() => goBack.back()}
+          aria-label="뒤로 가기"
+          className="font-pretendard flex flex-row gap-3.5 mt-4.5 ml-5.5 items-center"
+        >
+          <Image src="/icons/arrow-left.svg" alt="" width={8} height={16} />
+          <span className="leading-none mb-0.5">AI 검색</span>
+        </button>
+      </header>
       <main className="font-pretendard min-h-screen flex flex-col items-center text-center">
         <Image
           src="/icons/aisearch-sparkle.svg"
@@ -14,10 +30,10 @@ export default function SearchPage() {
           className="mt-42.5"
         />
 
-        <p className="text-2xl mt-3.75">
+        <span className="text-2xl mt-3.75">
           AI 검색으로 나의 포포에게
           <br /> 맞는 상품을 추천해드려요.
-        </p>
+        </span>
         <div className="relative w-85.75 mt-12.75">
           <Image
             src="/icons/aisearch-generation.svg"
@@ -37,9 +53,9 @@ export default function SearchPage() {
         </div>
 
         <div className="text-br-input-disabled-line text-[13px] mt-4.5 flex flex-col gap-2.25">
-          <p>&quot;시니어 강아지가 먹을 간식 뭐야?&quot;</p>
-          <p>&quot;활동량 적은 고양이 장난감 추천해 줘!&quot;</p>
-          <p>&quot;관절 사료 추천해 줘!&quot;</p>
+          <span>&quot;시니어 강아지가 먹을 간식 뭐야?&quot;</span>
+          <span>&quot;활동량 적은 고양이 장난감 추천해 줘!&quot;</span>
+          <span>&quot;관절 사료 추천해 줘!&quot;</span>
         </div>
       </main>
       <UnderBar />
