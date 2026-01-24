@@ -7,11 +7,17 @@ import { usePathname } from 'next/navigation';
 //푸터
 export default function UnderBar() {
   const pathname = usePathname();
-  const isActive = (href: string) => pathname === href; // pathname과 href가 같으면 true, 아니면 false를 반환
+  const isActive = (href: string) => {
+    // 홈인 (/products)은 정확히 /products일 때만 활성
+    if (href === '/products') return pathname === '/products';
+
+    // 나머지는 하위 경로까지 활성
+    return pathname === href || pathname.startsWith(`${href}/`);
+  };
 
   return (
     <>
-      <div className="fixed bottom-0 left-0 right-0 font-pretendard flex justify-between items-center w-full h-15 shadow-[0_-6px_12px_-8px_rgba(0,0,0,0.12)] px-[36.86px]">
+      <div className="bg-white fixed bottom-0 left-0 right-0 font-pretendard flex justify-between items-center w-full h-15 shadow-[0_-6px_12px_-8px_rgba(0,0,0,0.12)] px-[36.86px]">
         <Link href="/products" className="flex flex-col items-center gap-0.75">
           <Image
             src={
