@@ -31,7 +31,7 @@ export default function ProductPage() {
             <input
               type="text"
               placeholder="검색어를 입력하세요"
-              className="bg-transparent ml-2 w-full outline-none text-sm text-[#959595]"
+              className="bg-transparent ml-2 w-full outline-none text-sm text-br-input-active-line"
             />
           </div>
         </div>
@@ -72,11 +72,13 @@ export default function ProductPage() {
       {/* 본문 */}
       <div className="pt-36 px-3.5">
         {/* 서브 카테고리 */}
-        <p className="pt-5 pb-3 text-sm text-gray-500">사료 &gt; 건식</p>
+        <p className="pt-5 pb-3 text-sm text-br-input-active-line">
+          사료 &gt; 건식
+        </p>
 
         {/* 상품 목록 */}
         <section className="grid grid-cols-2 gap-4 pb-20">
-          <article>
+          <Link href={'/products/1'}>
             <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
               <Image
                 src="https://res.cloudinary.com/ddedslqvv/image/upload/v1768981576/febc15-final01-ecad/qBJjByQxs.png"
@@ -87,7 +89,7 @@ export default function ProductPage() {
               />
             </div>
             <p className="mt-2 font-semibold">5,000원</p>
-            <p className="mt-1.5 text-[#8A8F99]">
+            <p className="mt-1.5 text-br-input-active-line">
               부드러운 면 소재에 귀여운 강아지 옷 판매합니다!
             </p>
             <div className="flex gap-0.5 mt-2">
@@ -97,7 +99,7 @@ export default function ProductPage() {
                 width={12}
                 height={8}
               />
-              <span className="text-[#8A8F99] text-[12px]">103</span>
+              <span className="text-br-input-active-line text-[12px]">103</span>
               <Image
                 src="/icons/heart-line-gray.svg"
                 alt=""
@@ -105,11 +107,11 @@ export default function ProductPage() {
                 height={8}
                 className="ml-1"
               />
-              <span className="text-[#8A8F99] text-[12px]">2</span>
+              <span className="text-br-input-active-line text-[12px]">2</span>
             </div>
-          </article>
+          </Link>
 
-          <article>
+          <Link href={'/products/1'}>
             <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
               <Image
                 src="https://res.cloudinary.com/ddedslqvv/image/upload/v1768981576/febc15-final01-ecad/qBJjByQxs.png"
@@ -120,7 +122,7 @@ export default function ProductPage() {
               />
             </div>
             <p className="mt-2 font-semibold">5,000원</p>
-            <p className="mt-1.5 text-[#8A8F99]">
+            <p className="mt-1.5 text-br-input-active-line">
               부드러운 면 소재에 귀여운 강아지 옷 판매합니다!
             </p>
             <div className="flex gap-0.5 mt-2">
@@ -130,7 +132,7 @@ export default function ProductPage() {
                 width={12}
                 height={8}
               />
-              <span className="text-[#8A8F99] text-[12px]">103</span>
+              <span className="text-br-input-active-line text-[12px]">103</span>
               <Image
                 src="/icons/heart-line-gray.svg"
                 alt=""
@@ -138,11 +140,11 @@ export default function ProductPage() {
                 height={8}
                 className="ml-1"
               />
-              <span className="text-[#8A8F99] text-[12px]">2</span>
+              <span className="text-br-input-active-line text-[12px]">2</span>
             </div>
-          </article>
+          </Link>
 
-          <article>
+          <Link href={'/products/1'}>
             <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
               <Image
                 src="https://res.cloudinary.com/ddedslqvv/image/upload/v1768981576/febc15-final01-ecad/qBJjByQxs.png"
@@ -153,7 +155,7 @@ export default function ProductPage() {
               />
             </div>
             <p className="mt-2 font-semibold">5,000원</p>
-            <p className="mt-1.5 text-[#8A8F99]">
+            <p className="mt-1.5 text-br-input-active-line">
               부드러운 면 소재에 귀여운 강아지 옷 판매합니다!
             </p>
             <div className="flex gap-0.5 mt-2">
@@ -163,7 +165,7 @@ export default function ProductPage() {
                 width={12}
                 height={8}
               />
-              <span className="text-[#8A8F99] text-[12px]">103</span>
+              <span className="text-br-input-active-line text-[12px]">103</span>
               <Image
                 src="/icons/heart-line-gray.svg"
                 alt=""
@@ -171,11 +173,11 @@ export default function ProductPage() {
                 height={8}
                 className="ml-1"
               />
-              <span className="text-[#8A8F99] text-[12px]">2</span>
+              <span className="text-br-input-active-line text-[12px]">2</span>
             </div>
-          </article>
+          </Link>
 
-          <article>
+          <Link href={'/products/1'}>
             <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
               <Image
                 src="https://res.cloudinary.com/ddedslqvv/image/upload/v1768981576/febc15-final01-ecad/qBJjByQxs.png"
@@ -186,7 +188,7 @@ export default function ProductPage() {
               />
             </div>
             <p className="mt-2 font-semibold">5,000원</p>
-            <p className="mt-1.5 text-[#8A8F99]">
+            <p className="mt-1.5 text-br-input-active-line">
               부드러운 면 소재에 귀여운 강아지 옷 판매합니다!
             </p>
             <div className="flex gap-0.5 mt-2">
@@ -196,7 +198,7 @@ export default function ProductPage() {
                 width={12}
                 height={8}
               />
-              <span className="text-[#8A8F99] text-[12px]">103</span>
+              <span className="text-br-input-active-line text-[12px]">103</span>
               <Image
                 src="/icons/heart-line-gray.svg"
                 alt=""
@@ -204,11 +206,11 @@ export default function ProductPage() {
                 height={8}
                 className="ml-1"
               />
-              <span className="text-[#8A8F99] text-[12px]">2</span>
+              <span className="text-br-input-active-line text-[12px]">2</span>
             </div>
-          </article>
+          </Link>
 
-          <article>
+          <Link href={'/products/1'}>
             <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
               <Image
                 src="https://res.cloudinary.com/ddedslqvv/image/upload/v1768981576/febc15-final01-ecad/qBJjByQxs.png"
@@ -219,7 +221,7 @@ export default function ProductPage() {
               />
             </div>
             <p className="mt-2 font-semibold">5,000원</p>
-            <p className="mt-1.5 text-[#8A8F99]">
+            <p className="mt-1.5 text-br-input-active-line">
               부드러운 면 소재에 귀여운 강아지 옷 판매합니다!
             </p>
             <div className="flex gap-0.5 mt-2">
@@ -229,7 +231,7 @@ export default function ProductPage() {
                 width={12}
                 height={8}
               />
-              <span className="text-[#8A8F99] text-[12px]">103</span>
+              <span className="text-br-input-active-line text-[12px]">103</span>
               <Image
                 src="/icons/heart-line-gray.svg"
                 alt=""
@@ -237,11 +239,11 @@ export default function ProductPage() {
                 height={8}
                 className="ml-1"
               />
-              <span className="text-[#8A8F99] text-[12px]">2</span>
+              <span className="text-br-input-active-line text-[12px]">2</span>
             </div>
-          </article>
+          </Link>
 
-          <article>
+          <Link href={'/products/1'}>
             <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
               <Image
                 src="https://res.cloudinary.com/ddedslqvv/image/upload/v1768981576/febc15-final01-ecad/qBJjByQxs.png"
@@ -252,7 +254,7 @@ export default function ProductPage() {
               />
             </div>
             <p className="mt-2 font-semibold">5,000원</p>
-            <p className="mt-1.5 text-[#8A8F99]">
+            <p className="mt-1.5 text-br-input-active-line">
               부드러운 면 소재에 귀여운 강아지 옷 판매합니다!
             </p>
             <div className="flex gap-0.5 mt-2">
@@ -262,7 +264,7 @@ export default function ProductPage() {
                 width={12}
                 height={8}
               />
-              <span className="text-[#8A8F99] text-[12px]">103</span>
+              <span className="text-br-input-active-line text-[12px]">103</span>
               <Image
                 src="/icons/heart-line-gray.svg"
                 alt=""
@@ -272,9 +274,9 @@ export default function ProductPage() {
               />
               <span className="text-[#8A8F99] text-[12px]">2</span>
             </div>
-          </article>
+          </Link>
 
-          <article>
+          <Link href={'/products/1'}>
             <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
               <Image
                 src="https://res.cloudinary.com/ddedslqvv/image/upload/v1768981576/febc15-final01-ecad/qBJjByQxs.png"
@@ -285,7 +287,7 @@ export default function ProductPage() {
               />
             </div>
             <p className="mt-2 font-semibold">5,000원</p>
-            <p className="mt-1.5 text-[#8A8F99]">
+            <p className="mt-1.5 text-br-input-active-line">
               부드러운 면 소재에 귀여운 강아지 옷 판매합니다!
             </p>
             <div className="flex gap-0.5 mt-2">
@@ -295,7 +297,7 @@ export default function ProductPage() {
                 width={12}
                 height={8}
               />
-              <span className="text-[#8A8F99] text-[12px]">103</span>
+              <span className="text-br-input-active-line text-[12px]">103</span>
               <Image
                 src="/icons/heart-line-gray.svg"
                 alt=""
@@ -303,9 +305,9 @@ export default function ProductPage() {
                 height={8}
                 className="ml-1"
               />
-              <span className="text-[#8A8F99] text-[12px]">2</span>
+              <span className="text-br-input-active-line text-[12px]">2</span>
             </div>
-          </article>
+          </Link>
         </section>
       </div>
 
