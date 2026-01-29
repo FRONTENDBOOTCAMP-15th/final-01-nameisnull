@@ -1,33 +1,28 @@
-'use client';
+import { getProductDetail } from '@/lib/api/products';
+import ProductDetailClient from './ProductDetailClient';
 
-import { useState } from 'react';
-import Header from '@/components/common/Header';
-import ProductDetailFooter from '@/app/products/[id]/components/ProductDetailFooter';
-import ProductDetailImage from '@/app/products/[id]/components/ProductImage';
-import SellerProfileBar from '@/app/products/[id]/components/SellerProfileBar';
-import InfoTabs from '@/app/products/[id]/components/InfoTabs';
-import ProductInfoTab from '@/app/products/[id]/components/ProductInfoTab';
-import SellerInfoTab from '@/app/products/[id]/components/SellerInfoTab';
+interface PageProps {
+  params: { id: string };
+}
 
-export default function ProductDetailPage() {
-  const [activeTab, setActiveTab] = useState('product');
+export default async function ProductDetailPage({ params }: PageProps) {
+  const { id } = await params;
+  const response = await getProductDetail(id);
 
-  return (
-    <>
-      <div className="font-pretendard pb-20">
-        <Header title="상품 상세" />
-        <ProductDetailImage />
-
-        <div className="px-4 py-4">
-          <SellerProfileBar />
-          <InfoTabs activeTab={activeTab} onTabChange={setActiveTab} />
-
-          {activeTab === 'product' && <ProductInfoTab />}
-          {activeTab === 'seller' && <SellerInfoTab />}
-
-          <ProductDetailFooter />
+  // 에러 처리
+  if (response.ok === 0) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="text-center">
+          <p className="text-br-input-disabled-text mb-4">{response.message}</p>
+          <p className="text-sm text-br-input-disabled-text">
+            상품을 불러오는데 실패했습니다.
+          </p>
         </div>
       </div>
-    </>
-  );
+    );
+  }
+
+  // Client Component에 데이터 전달
+  return <ProductDetailClient product={response.item} />;
 }
